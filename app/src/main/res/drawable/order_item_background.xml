@@ -1,0 +1,8 @@
+<!-- order_item_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- Фоновый цвет -->
+    <stroke
+        android:width="2dp"
+        android:color="#D3D3D3"/> <!-- Цвет и ширина рамки -->
+    <corners android:radius="8dp"/> <!-- Закругленные углы -->
+</shape>

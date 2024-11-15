@@ -1,0 +1,31 @@
+<!-- res/layout/order_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/order_item_background">
+
+    <!-- Заголовок заказа -->
+    <TextView
+        android:id="@+id/orderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ номер 001"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>
+
+    <!-- Список товаров в заказе -->
+    <TextView
+        android:id="@+id/orderItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderTitle"
+        android:text="• штука1 x1\n• штука2 x3"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+</RelativeLayout>

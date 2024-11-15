@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"/>
+
+    <!-- Выбор языка -->
+    <TextView
+        android:id="@+id/languageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите язык"
+        android:textSize="18sp"
+        android:layout_below="@id/settingsTitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Выбор фона -->
+    <TextView
+        android:id="@+id/backgroundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите фоновое изображение"
+        android:textSize="18sp"
+        android:layout_below="@id/languageSpinner"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/backgroundSpinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backgroundText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Кнопка для возвращения в меню -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад в меню"
+        android:layout_below="@id/backgroundSpinner"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
